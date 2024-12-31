@@ -1,3 +1,4 @@
+# Generic function to create a matrix object on which you can get the inverse.
 makeCacheMatrix <- function(x = matrix()) {
         # initialize the matrix to NULL
         inverse <- NULL
@@ -23,6 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
         )
 }
 
+
+# Get the inverse of matrix using cache if available.
 cacheSolve <- function(x, ...) {
         inverse <- x$getinverse()
 
